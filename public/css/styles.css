@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: url('/assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+button {
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 18px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+#logoutBtn {
+  background: #dc3545;
+}
+
+#logoutBtn:hover {
+  background: #c82333;
+}
+
+.patient-card {
+  background: #ffffffbb;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 6px solid #28a745;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.patient-card p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.patient-card button {
+  margin-top: 8px;
+  background: #17a2b8;
+}
+
+.patient-card button:hover {
+  background: #138496;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+#error {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+}

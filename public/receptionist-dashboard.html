@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" href="assets/clinic-logo.jpg" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <!-- Inside <head> -->
+
+
+  <title>Receptionist Dashboard</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header style="text-align:center; padding:10px;">
+      <img src="assets/clinic-logo.jpg" alt="Clinic Logo" width="60"/>
+      
+    <h2>Receptionist Dashboard</h2>
+    </header>  
+    
+    <form id="patientForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="gender" placeholder="Gender" required />
+      <input type="text" id="contact" placeholder="Contact" required />
+      
+      <label for="treatment">Treatment:</label>
+      <select name="treatment" id="treatment" required>
+        <option value="">Select Treatment</option>
+        <option value="General Checkup">General Checkup - ₹300</option>
+        <option value="Dental">Dental - ₹500</option>
+        <option value="ENT">ENT - ₹400</option>
+        <option value="Dermatology">Dermatology - ₹450</option>
+      </select>
+
+      <button type="submit">Add Patient</button>
+    </form>
+
+    <h3>Generate Bill</h3>
+    <div id="billList"></div>
+    <button id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+  </div>
+
+  <script type="module" src="js/receptionist.js"></script>
+</body>
+</html>

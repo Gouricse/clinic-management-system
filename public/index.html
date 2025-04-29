@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinic Management System - Login</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header style="text-align:center; padding:10px;">
+      <img src="assets/clinic-logo.jpg" alt="Clinic Logo" width="60"/>
+      <h2>Smart Clinic Management System</h2>
+    </header>    
+    <form id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <select id="role" required>
+        <option value="">Select Role</option>
+        <option value="doctor">Doctor</option>
+        <option value="receptionist">Receptionist</option>
+      </select>
+      <button type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+    </form>
+    <p id="error" style="color:red;"></p>
+  </div>
+  <script type="module" src="js/auth.js"></script>
+  <footer style="text-align:center; font-size:14px; padding:15px; margin-top:30px;">
+    <p>© 2025 ClinicCare Solutions. All rights reserved.</p>
+  </footer>  
+</body>
+</html>
+  
